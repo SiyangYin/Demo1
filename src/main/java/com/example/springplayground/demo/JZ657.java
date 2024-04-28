@@ -1,6 +1,6 @@
 package com.example.springplayground.demo;
 
-public class demo0 {
+public class JZ657 {
 
     public static void main(String[] args) {
         run();
