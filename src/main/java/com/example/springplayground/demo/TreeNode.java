@@ -22,11 +22,11 @@ public class TreeNode {
                 '}';
     }
 
-    public static TreeNode build(int[] a, int i) {
-        if (i >= a.length || a[i] == -1) return null;
-        TreeNode node = new TreeNode(a[i]);
-        node.left = build(a, 2 * i + 1);
-        node.right = build(a, 2 * i + 2);
+    public static TreeNode build(int[] t, int i) {
+        if (i >= t.length || t[i] == -1) return null;
+        TreeNode node = new TreeNode(t[i]);
+        node.left = build(t, 2 * i + 1);
+        node.right = build(t, 2 * i + 2);
         return node;
     }
 
